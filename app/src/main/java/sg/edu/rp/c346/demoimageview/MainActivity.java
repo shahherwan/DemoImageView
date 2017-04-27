@@ -6,7 +6,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView ivDay2;
+    ImageView ivDay2, ivDay1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,8 +14,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Get the ImageView obj and assign to ivDay2
+        ivDay1 = (ImageView) findViewById(R.id.imageView);
+        // Set the image
+        ivDay1.setImageResource(R.drawable.day1);
+
+        // Get the ImageView obj and assign to ivDay2
         ivDay2 = (ImageView) findViewById(R.id.imageView2);
         // Set the image
         ivDay2.setImageResource(R.drawable.day2);
+
+
     }
 }
